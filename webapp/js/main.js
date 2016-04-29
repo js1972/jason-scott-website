@@ -1,5 +1,4 @@
 /**
- *
  * Bootstrap one-page template with Parallax effect | Script Tutorials
  * http://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/
  *
@@ -8,6 +7,9 @@
  * 
  * Copyright 2014, Script Tutorials
  * http://www.script-tutorials.com/
+ *
+ *
+ * Change by Jason Scott - April 2016. Enable the parallax effect on iOS devices.
  */
 
 $(document).ready(function (){
@@ -43,6 +45,16 @@ $(document).ready(function (){
   var infowindow = new google.maps.InfoWindow({
     content:  '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
   });  
+
+  // If this is an IOS device we need to set background-attachment to scroll as 
+  // iOS blcoks fixed for performance reasons!
+  var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  if (iOS === true) {
+    $("home").css("background-attachment", "scroll");
+    console.log("This is an iOS device");
+  } else {
+    console.log("NOT an iOS device");
+  }
 
   /*Page scroll*/
   $.localScroll()
