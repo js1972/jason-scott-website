@@ -50,12 +50,8 @@ $(document).ready(function (){
   // iOS blcoks fixed for performance reasons!
   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
   if (iOS === true) {
-    $("home").css("background-attachment", "scroll");
-    $("information").css("background-attachment", "scroll");
-    
-    alert("This is an iOS device");
-  } else {
-    alert("NOT an iOS device");
+    $("#home").css("background-attachment", "scroll");
+    $("#information").css("background-attachment", "scroll");
   }
 
   /*Page scroll*/
