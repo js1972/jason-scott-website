@@ -51,9 +51,11 @@ $(document).ready(function (){
   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
   if (iOS === true) {
     $("home").css("background-attachment", "scroll");
-    console.log("This is an iOS device");
+    $("information").css("background-attachment", "scroll");
+    
+    alert("This is an iOS device");
   } else {
-    console.log("NOT an iOS device");
+    alert("NOT an iOS device");
   }
 
   /*Page scroll*/
