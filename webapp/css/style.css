@@ -1,13 +1,13 @@
-﻿/* ============================================================================================== 
+﻿/* ==============================================================================================
 This copyright notice must be kept untouched in the stylesheet at all times.
-The original version of this stylesheet and the associated (x)html 
+The original version of this stylesheet and the associated (x)html
 is available at http://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/
 Copyright (c) Script Tutorials. All rights reserved.
 This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
 ================================================================================================= */
 
 /*
-Change by Jason Scott (April 2016) to better suit requirements. 
+Change by Jason Scott (April 2016) to better suit requirements.
 */
 
 /* general styles */
@@ -97,4 +97,8 @@ footer .glyphicon {
 }
 footer .glyphicon:hover {
   color: #306d9f;
+}
+
+.svgico {
+  display: inline-block;
 }
