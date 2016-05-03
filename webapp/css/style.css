@@ -14,6 +14,7 @@ Change by Jason Scott (April 2016) to better suit requirements.
 html, body {
   height: 100%;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* padded section */
