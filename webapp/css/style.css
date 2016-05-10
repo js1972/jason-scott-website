@@ -95,15 +95,16 @@ is just part of moving the text down a little of a dadrker part of the image. */
 }
 
 #information {
-  background: url(../images/fiori.png) no-repeat center center fixed;
+  background: url(../images/fiori2.png) no-repeat center center fixed;
+  background-color: #253845;
   display: table;
   height: 800px;
   position: relative;
   width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain; /* Swtich to contain to make the image smaler and fit within the space */
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 #information .panel {
   opacity: 0.85;
@@ -231,4 +232,15 @@ footer .glyphicon:hover {
     /*margin-right: 20px;*/
     display: inline-block
   }
+}
+
+.navbar {
+    opacity: 0.8;
+}
+
+/* Add a slightly darker background to the heading charactes so thet stand
+   out better over the image background.
+*/
+H1 {
+    text-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
