@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2014, Script Tutorials
  * http://www.script-tutorials.com/
  *
@@ -15,7 +15,7 @@
 $(document).ready(function (){
 
   // create a LatLng object containing the coordinate for the center of the map
-  var latlng = new google.maps.LatLng(-33.86455, 151.209);
+  var latlng = new google.maps.LatLng(-31.958195, 115.856568);
 
   // prepare the map properties
   var options = {
@@ -44,9 +44,9 @@ $(document).ready(function (){
   // add information window
   var infowindow = new google.maps.InfoWindow({
     content:  '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
-  });  
+  });
 
-  // If this is an IOS device we need to set background-attachment to scroll as 
+  // If this is an IOS device we need to set background-attachment to scroll as
   // iOS blcoks fixed for performance reasons!
   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
   if (iOS === true) {
