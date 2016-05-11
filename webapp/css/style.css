@@ -26,6 +26,14 @@ html, body {
   width: 100%;
 }
 
+/* Center any element with a 60% wide block - used on the Achievments <ul> */
+.center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
 /* vertical-centered text */
 /* Add a media query so that we increase the padding on larger screens. This
 is just part of moving the text down a little of a dadrker part of the image. */
@@ -107,7 +115,7 @@ is just part of moving the text down a little of a dadrker part of the image. */
   background-size: contain;
 }
 #information .panel {
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 #google_map {
