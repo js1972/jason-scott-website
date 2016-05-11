@@ -26,12 +26,29 @@ html, body {
   width: 100%;
 }
 
-/* Center any element with a 60% wide block - used on the Achievments <ul> */
+/* Keep element roughly centered regardless fo screen width - used by the
+achievement and certificates <ul> element. */
 .center {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 70%;
+}
+@media (max-width: 768px) {
+    .center {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+@media (min-width: 1200px) {
+    .center {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 }
 
 /* vertical-centered text */
@@ -253,6 +270,7 @@ H1 {
     text-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
+/* Nice hr element which fades out towards the ends */
 hr.soft {
   border: 0;
   height: 1px;
