@@ -137,6 +137,11 @@ is just part of moving the text down a little of a dadrker part of the image. */
   opacity: 0.9;
 }
 
+#location {
+  background-color: #306d9f;
+  color: #ffffff;
+}
+
 #google_map {
   height: 500px;
 }
@@ -272,6 +277,18 @@ H1 {
     text-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
+H2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+H3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+H4 {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Nice hr element which fades out towards the ends */
 hr.soft {
   border: 0;
@@ -282,4 +299,15 @@ hr.soft {
   background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
   padding: 0;
   margin: 0;
+}
+
+.standard-font {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  #information li {
+    font-size: 18px;
+  }
 }
