@@ -120,7 +120,9 @@ is just part of moving the text down a little of a dadrker part of the image. */
 }
 
 #information {
-  background: url(../images/fiori2.png) no-repeat center center fixed;
+  /* Darken the background image with a gradient - gives better visibility of the floating divs */
+  /*background: url(../images/fiori2.png) no-repeat center center fixed;*/
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/fiori2.png) no-repeat center center fixed;
   background-color: #253845;
   display: table;
   height: 800px;
