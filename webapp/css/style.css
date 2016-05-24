@@ -202,7 +202,8 @@ footer .glyphicon:hover {
   border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+/* Drop the max-width break down from 768 to 767 */
+@media (max-width: 767px) {
   .timelineitem {
     border-left: 5px solid #333;
     text-align: left;
